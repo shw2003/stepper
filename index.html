@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Stepper</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="stepper-container">
+      <div class="stepper">
+        <div class="step" id="step1">
+          <div class="step-number">1</div>
+        </div>
+        <div class="progress-bar" id="progress-bar-1"></div>
+        <div class="step" id="step2">
+          <div class="step-number">2</div>
+        </div>
+        <div class="progress-bar" id="progress-bar-2"></div>
+        <div class="step" id="step3">
+          <div class="step-number">3</div>
+        </div>
+      </div>
+
+      <div class="content-wrapper">
+        <div class="left-image" id="left-image">
+          <!-- Left image for the current step -->
+          <div class="content active" id="content1-left">
+            <img src="./Assets/left1Img.png" alt="Animation" />
+          </div>
+          <div class="content" id="content2-left">
+            <img src="./Assets/left2Img.png" alt="Animation" />
+          </div>
+          <div class="content" id="content3-left">
+            <img src="./Assets/left3Img.png" alt="Animation" />
+          </div>
+        </div>
+        <div class="middle-part" id="middle-part">
+          <!-- Middle part content for the current step -->
+        </div>
+        <div class="right-image" id="right-image">
+          <!-- Right image for the current step -->
+          <div class="content active" id="content1-right">
+            <img src="./Assets/rightImg1.png" alt="Animation" />
+          </div>
+          <div class="content" id="content2-right">
+            <div class="image-div">
+              <img src="./Assets/right2Img.png" class="img1" alt="Animation" />
+              <img src="./Assets/right2Img.png" class="img2" alt="Animation" />
+            </div>
+            <div>
+              <img src="./Assets/right2Img.png" class="img3" alt="Animation" />
+            </div>
+          </div>
+          <div class="content" id="content3-right">
+            <img src="./Assets/right3Img.png" alt="Animation" />
+          </div>
+        </div>
+      </div>
+
+      <div class="timer" id="timer">Time Left: 10s</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
